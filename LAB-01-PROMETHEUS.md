@@ -103,28 +103,28 @@ scrape_duration_seconds
 
 <kbd>
   <img src="/images/prometheus-01.png" width="600">
-</kbd>
+</kbd><br/><br/>
 
 - Right now you are seeing the time it took to Prometheus to scrape (collect) it metrics the last time, but let's click on "Graph" to see the historical data
 
 <kbd>
   <img src="/images/prometheus-02.png" width="600">
-</kbd>
+</kbd><br/><br/>
 
 - But what is being monitored by prometheus? click on "Targets" under "Status" to check it
 
 <kbd>
   <img src="/images/prometheus-03.png" width="600">
-</kbd>
+</kbd><br/><br/>
 
 - In addition, you can see the current prometheus configuration under "Status/Configuration" and the prometheus information in "Status/Runtime & Build Information"
 
 <kbd>
   <img src="/images/prometheus-04.png" width="600">
-</kbd>
+</kbd><br/><br/>
 
 - Finally, if you check the current rules under "Status/Rules" and the current alerts under "Alerts" you will see that they are empty (later we will configure some)
 
 <kbd>
   <img src="/images/prometheus-05.png" width="600">
-</kbd>
+</kbd><br/><br/>
