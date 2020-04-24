@@ -1,0 +1,22 @@
+version: '2.4'
+services:
+  prometheus:
+    image: "prom/prometheus:v2.16.0"
+    container_name: prometheus
+    # REPLACE LOCALHOST WITH THE SERVER IP IF YOU WILL ACCESS IT FROM ANOTHER SERVER
+    hostname: localhost
+    restart: always
+    mem_limit: 4G
+    ports:
+     - "9090:9090"
+    command:
+     - '--config.file=/etc/prometheus/prometheus.yml'
+    volumes:
+     - "./prometheus/:/etc/prometheus/"
+     - "prometheus_data:/prometheus"
+    networks:
+     - "monitoring"
+volumes:
+  prometheus_data:
+networks:
+  monitoring:

@@ -2,7 +2,7 @@
 
 ## Description
 
-After this course you will understand the different components of the Prometheus stack and you will be able to deploy it using docker to configure infrastructure monitoring.
+After this tutorial you will understand the different components of the Prometheus stack and you will be able to deploy it using docker to configure infrastructure monitoring.
 
 ## Agenda
 
