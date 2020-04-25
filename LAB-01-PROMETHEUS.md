@@ -1,4 +1,4 @@
-# Lab 01: Deploy Prometheus using Docker
+# Lab 01: Deploy Prometheus using Docker Compose
 
 ## Summary
 
@@ -63,7 +63,7 @@ services:
     container_name: prometheus
     # REPLACE LOCALHOST WITH THE SERVER IP IF YOU WILL ACCESS IT FROM ANOTHER SERVER
     hostname: localhost
-    restart: always
+    restart: unless-stopped
     mem_limit: 4G
     ports:
      - "9090:9090"
