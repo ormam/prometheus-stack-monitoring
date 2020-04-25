@@ -16,7 +16,7 @@
 nano ~/monitoring-lab/docker-compose.yml
 ```
 
-- Add the following service:
+- Add the following service (and the "grafana_data" volume):
 
 ```
   grafana:
