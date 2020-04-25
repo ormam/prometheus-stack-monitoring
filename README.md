@@ -4,6 +4,11 @@
 
 After this tutorial you will understand the different components of the Prometheus stack and you will be able to deploy it using docker to configure infrastructure monitoring.
 
+## Prerequisites
+
+- docker
+- docker-compose
+
 ## Agenda
 
 - Lab 01: Deploy Prometheus using Docker Compose
