@@ -91,7 +91,7 @@ nano ~/monitoring-lab/docker-compose.yml
      - "monitoring"
 ```
 
-- Deploy node_exporter using docker compose
+- Deploy node_exporter using docker compose by run
 
 ```
 cd ~/monitoring-lab
@@ -110,7 +110,7 @@ docker-compose up -d
 - Let's create a ubuntu container attached to the "monitoring" network to ensure that our node_exporter container is working as expected
 
 ```
-docker run --rm -it --name node-exporter-check --network example_monitoring ubuntu:18.04 /bin/bash
+docker run --rm -it --name node-exporter-check --network monitoringlab_monitoring ubuntu:18.04 /bin/bash
 ```
 
 - Now, that we are attached to the container let's install curl and check the current metrics
@@ -120,7 +120,7 @@ apt update && apt install -y curl
 curl nodeexporter:9100/metrics
 ```
 
-- Note that if your docker-compose file is under a different folder (other than ~/monitoring) the newtork name may change, use the following command to see your current docker networks
+- Note that if your docker-compose file is under a different folder (other than ~/monitoring-lab) the newtork name may change, use the following command to see your current docker networks
 
 ```
 docker network ls
