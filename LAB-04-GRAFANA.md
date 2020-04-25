@@ -1,4 +1,4 @@
-# Lab 03: Deploy and configure Grafana using Docker Compose
+# Lab 04: Deploy and configure Grafana using Docker Compose
 
 ## Summary
 

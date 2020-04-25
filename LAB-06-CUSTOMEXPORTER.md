@@ -152,6 +152,14 @@ docker-compose restart prometheus
 
  ## Inspect your exporter metrics
 
+- Check the custom exporter metric by browse to the url below (refresh several times)
+
+```
+http://localhost:5000/metrics
+```
+
+- As you can note, a custom exporter is just a server that print key-value pairs of metrics
+
 - In the Prometheus portal, run the following query under the "Graph" section and click "Execute"
 
 ```

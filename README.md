@@ -6,11 +6,9 @@ After this tutorial you will understand the different components of the Promethe
 
 ## Agenda
 
-- Module 01: Introduction
-- Module 02: Prometheus Stack Architecture
-- Module 03: Prometheus
-- Module 04: Exporters
-- Module 05: Alertmanager
-- Module 06: Grafana
-- Module 07: Developing a Custom Exporter
-- Module 08: Summary
+- Lab 01: Deploy Prometheus using Docker Compose
+- Lab 02: Configuring Node Exporter
+- Lab 03: Add a scrape configuration for prometheus
+- Lab 04: Deploy and configure Grafana using Docker Compose
+- Lab 05: Deploy and Configure Alertmanager
+- Lab 06: Write a custom prometheus exporter
