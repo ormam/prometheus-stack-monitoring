@@ -31,3 +31,8 @@ scrape_configs:
     file_sd_configs:
       - files:
          - targets.yml
+
+  - job_name: 'My Exporter'
+    file_sd_configs:
+      - files:
+         - custom-exporter.yml

@@ -262,12 +262,6 @@ cd ~/monitoring-lab
 docker-compose up -d
 ```
 
-- Deploy node_exporter using docker compose by run
-
-```
-cd ~/monitoring-lab
-docker-compose up -d
-```
 
 ## Restart Prometheus to apply the new configuration
 
