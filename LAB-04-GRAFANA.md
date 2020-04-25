@@ -175,9 +175,10 @@ PromQL Query: up{job="$target"}
 - Configure the visualization with the following details, then move to the next step:
 
 ```
+Value/Show: Current
 Type: Singlestat
 Coloring/Background: Enabled
-Coloring/Thresholds: 1,0
+Coloring/Thresholds: 1,0.9
 (Invert the colors to set green for "1" and red for "0")
 Value Mappings: add "1=Up" and "0=Down"
 ```
@@ -202,3 +203,15 @@ Description: Show if the status is running or not
 <kbd>
   <img src="/images/grafana-15.png" width="600">
 </kbd><br/><br/>
+
+- To test your dashboard let's stop the node_exporter container
+
+```
+docker-compose stop node-exporter
+```
+
+- Check your dashboard to see that the dashboard was updated (may take a minute), then start your node_export service again
+
+```
+docker-compose start node-exporter
+```

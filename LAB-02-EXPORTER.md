@@ -110,7 +110,7 @@ docker-compose up -d
 - Let's create a ubuntu container attached to the "monitoring" network to ensure that our node_exporter container is working as expected
 
 ```
-docker run --rm -it --name node-exporter-check --network monitoringlab_monitoring ubuntu:18.04 /bin/bash
+docker run --rm -it --name node-exporter-check --network monitoring-lab_monitoring ubuntu:18.04 /bin/bash
 ```
 
 - Now, that we are attached to the container let's install curl and check the current metrics
