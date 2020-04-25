@@ -17,3 +17,7 @@ After this tutorial you will understand the different components of the Promethe
 - Lab 04: Deploy and configure Grafana using Docker Compose
 - Lab 05: Deploy and Configure Alertmanager
 - Lab 06: Write a custom prometheus exporter
+
+## Notes
+
+You can find all the required files under "./monitoring-lab"
