@@ -15,3 +15,8 @@ scrape_configs:
     static_configs:
     # The targets specified by the static config.
     - targets: ['localhost:9090']
+
+  - job_name: 'My Targets'
+    file_sd_configs:
+      - files:
+         - targets.yml
