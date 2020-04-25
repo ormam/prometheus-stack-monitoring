@@ -50,8 +50,24 @@ services:
       - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-piechart-panel,novalabs-annotations-panel,vonage-status-panel,fetzerch-sunandmoon-datasource,natel-discrete-panel,natel-influx-admin-panel
       # YOU CAN CHANGE THE ADMIN PASSWORD USING THIS VARIABLE
       - GF_SECURITY_ADMIN_PASSWORD=admin
+  alertmanager:
+    image: "prom/alertmanager:v0.20.0"
+    container_name: alertmanager
+    restart: unless-stopped
+    mem_limit: 4G
+    ports:
+      - "9093:9093"
+    command:
+      - "--config.file=/etc/alertmanager/alertmanager.yml"
+      - "--storage.path=/alertmanager"
+    volumes:
+      - "./alertmanager/:/etc/alertmanager/"
+      - "alertmanager_data:/alertmanager"
+    networks:
+      - "monitoring"
 volumes:
   prometheus_data:
   grafana_data:
+  alertmanager_data:
 networks:
   monitoring:

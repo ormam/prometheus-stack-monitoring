@@ -6,7 +6,18 @@ global:
   scrape_timeout: 10s
   # How frequently to evaluate rules.
   evaluation_interval: 15s 
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - scheme: http
+    static_configs:
+    - targets: ['alertmanager:9093']
     
+# Alerts rules
+rule_files:
+  - 'alerts.yml'
+
 # A list of scrape configurations.
 scrape_configs:
   # The job name assigned to scraped metrics by default.
